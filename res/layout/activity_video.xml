@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.itfsm.video.webrtc.VideoActivity" >
+    tools:context="com.nvapp.video.webrtc.VideoActivity" >
 
     <android.opengl.GLSurfaceView
         android:id="@+id/glview_call"
@@ -28,13 +28,13 @@
             android:background="@drawable/selector_img_video_hangup" />
     </LinearLayout>
 
-    <com.itfsm.video.webrtc.widgets.NaviBar
+    <com.nvapp.video.webrtc.widgets.NaviBar
         android:id="@+id/navibar_video"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >
 
-    </com.itfsm.video.webrtc.widgets.NaviBar>
+    </com.nvapp.video.webrtc.widgets.NaviBar>
 
 </RelativeLayout>

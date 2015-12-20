@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.itfsm.video.webrtc.ConnectActivity" >
+    tools:context="com.nvapp.video.webrtc.ConnectActivity" >
    <LinearLayout
         android:id="@+id/btns_hangup_and_answer"
         android:layout_width="match_parent"
