@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itfsm.video.webrtc.VideoActivity" >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glview_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/btns_hangup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/btn_video_hangup"
+            android:layout_width="246dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/selector_img_video_hangup" />
+    </LinearLayout>
+
+    <com.itfsm.video.webrtc.widgets.NaviBar
+        android:id="@+id/navibar_video"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </com.itfsm.video.webrtc.widgets.NaviBar>
+
+</RelativeLayout>
