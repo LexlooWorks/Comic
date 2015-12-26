@@ -1,5 +1,7 @@
 package com.nvapp.comic.lib.view;
 
+import com.nvapp.comic.R;
+
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -10,9 +12,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nvim.R;
-import com.nvim.log.Logger;
-
 public class NaviTabButton extends FrameLayout {
 	private ImageView mImage;
 	private TextView mTitle;
@@ -20,8 +19,6 @@ public class NaviTabButton extends FrameLayout {
 
 	private Drawable mSelectedImg;
 	private Drawable mUnselectedImg;
-
-	private Logger logger = Logger.getLogger(NaviTabButton.class);
 
 	private RelativeLayout container;
 
@@ -81,7 +78,6 @@ public class NaviTabButton extends FrameLayout {
 	}
 
 	public void setUnreadNotify(int unreadNum) {
-		logger.d("unread#setUreadNotify -> unreadNum:%d", unreadNum);
 		if (0 == unreadNum) {
 			mNotify.setVisibility(View.INVISIBLE);
 			return;

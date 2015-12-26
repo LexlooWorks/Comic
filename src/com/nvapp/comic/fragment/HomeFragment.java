@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment implements android.support.v4.widget.
 
 	private void initView(View view) {
 		// db = FinalDb.create(getActivity(), false);
-		progressbar = (ProgressBar) view.findViewById(R.id.progressbar);
+		progressbar = (ProgressBar) view.findViewById(R.id.progress_bar);
 		listView = (ListView) view.findViewById(R.id.listView);
 		swipe = (SwipeRefreshLayout) view.findViewById(R.id.swipe);
 		swipe.setOnRefreshListener(this);
